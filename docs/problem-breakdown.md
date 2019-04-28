@@ -40,7 +40,7 @@ I want to be able to post pictures to insta-sham.
 
 [Useful SO post](https://stackoverflow.com/questions/14174044/uploading-a-file-in-rails)
 
-- Install and use `ActiveStorage` (after some unsuccessful attempts not using a gem for this)
+1. Install and use `ActiveStorage` (after some unsuccessful attempts not using a gem for this)
 
 ```
 User story 2: View all posts
@@ -58,16 +58,36 @@ I want to be able to see all posted pictures.
 - `rails db:migrate`
 
 
+#### ADDITIONAL
+
+- Add link to `view` individual posts from timeline
+
 ```
-User story 3: Write comments
+User story 3: View individual post
+----------------------------------
+As a user,
+so I can see a picture in all its glory, without clutter,
+I want to be able to click through to view a post on its own separate page.
+```
+
+
+- Add `delete` option for posts from individual view
+
+
+```
+User story X: Write comments
 ----------------------------
 As a user,
 so that I can let others know my opinion on their pictures,
 I want to be able to write comments on posts.
 ```
 
+1. Comments will `belong_to` a picture
+2. A Picture may have many comments
+
+
 ```
-User story 4: Like a picture
+User story Y: Like a picture
 ----------------------------
 As a user,
 so that I can let others know I appreciate a picture,
@@ -75,7 +95,7 @@ I want to be able to 'like' posts.
 ```
 
 ```
-User story 5: Sign up
+User story Z: Sign up
 ---------------------
 As a users,
 so that other users know who has posted a picture or made a comment,

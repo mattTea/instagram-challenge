@@ -8,7 +8,9 @@
   <% @pictures.each do |picture| %>
     <li>
       <%= picture.title %>
-      <%= image_tag picture.image if picture.image.attached? %>
+      <%= link_to picture_path(picture.id) do %>
+        <%= image_tag picture.image if picture.image.attached? %>
+      <% end %>
     </li>
   <% end %>
 </ul>
