@@ -97,18 +97,23 @@ I want to be able to write comments on posts.
 - Run `rails generate model Comment author:string body:text picture:references`
 - Run `rails db:migrate`
 
+------
 
-ADDITIONAL refactoring
+_Delivered to this point 28th April 2019_
 
-- Refactors pics to prevent adding without title
-- Adds test for this
-- Refactors `show` to allow display without pic
-- Refactors `index` to link entire pic entry (to `show` page)
-- Adds flash messages for created and deleted pics
+------
 
 
 ```
-User story Y: Like a picture
+User story 6: See number of comments on timeline
+------------------------------------------------
+As a user,
+so that I measure the popularity of my pictures,
+I want to be able to see the number of comments added in the timeline view.
+```
+
+```
+User story 7: Like a picture
 ----------------------------
 As a user,
 so that I can let others know I appreciate a picture,
@@ -116,7 +121,7 @@ I want to be able to 'like' posts.
 ```
 
 ```
-User story Z: Sign up
+User story 8: Sign up
 ---------------------
 As a users,
 so that other users know who has posted a picture or made a comment,

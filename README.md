@@ -1,73 +1,65 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-    - `rspec`
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* How to run app locally
-    - `rails server`
-    - Visit `localhost:3000`
-
-
-
-
-
-
 Instagram Challenge
 ===================
 
-## Instructions
+## Description
 
-* Challenge time: one weekend
-* Feel free to use Google, your notes, books, etc., but work on your own
-* If you refer to the solution of another coach or student, please put a link to that in your README
-* If you have a partial solution, **still check in a partial solution**
-* You must submit a pull request to this repo with your code by 9am Monday morning
+An Instagram clone using the Ruby on Rails framework.
 
-## Task
+Users can add pictures, delete pictures and add comments to other pictures.
 
-Build Instagram: Simple huh!
+Upcoming features will include
+- Ability to `like` pictures
+- Sign-up and login
 
-Your challenge is to build Instagram using Rails. You'll need **users** who can post **pictures**, write **comments** on pictures and **like** a picture. Style it like Instagram's website (or more awesome).
+------
 
-Bonus if you can add filters!
+### Technologies used
 
-## How to start
+- Ruby
+- Rail framework (including sqlite3 db)
+- Rspec
+- Capybara
 
-1. Produce some stories, break them down into tasks, and estimate
-2. Fork this repo, clone, etc
-3. Initialize a new rails project
 
-Remember to proceed in small steps! Getting confused? Make the steps even smaller.
+### Personal motivation
 
-## Code Quality
+- Further improve knowledge of the Rails framework
+- Improve my process of learning new technologies
 
-For linting, you can use the `.rubocop.yml` in this repository (or your own!).
-You'll need these gems:
+------
 
-```ruby
-gem "rubocop", "0.48.1"
-gem "rubocop-rails"
-```
+## Steps to download
 
-You can also lint Javascript, CSS, and ERB — feel free to research this. These
-will help you to train yourself to produce cleaner code — and will often alert
-you to mistakes or mishaps!
+1. Fork this [repo](https://github.com/mattTea/instagram-challenge)
+
+2. `git clone git@github.com:<userName>/instagram-challenge` onto your local machine
+
+3. Run `bundle install`
+
+4. Run `rails db:migrate`
+
+------
+
+## To run tests
+
+After forking and cloning repo, run `rspec`
+
+------
+
+## To use app
+
+Run `rails server` 
+
+------
+
+## Problem breakdown
+
+Links to requirements and problem breakdown, and models
+
+[Problem breakdown](https://github.com/mattTea/instagram-challenge/blob/master/docs/problem-breakdown.md)
+
+------
+
+## Original README
+
+[Link to original repo and readme](https://github.com/makersacademy/instagram-challenge)
