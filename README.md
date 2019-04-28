@@ -48,7 +48,8 @@ After forking and cloning repo, run `rspec`
 
 ## To use app
 
-Run `rails server` 
+- Run `rails server`
+- Navigate to `http://localhost:3000/`
 
 ------
 
