@@ -14,7 +14,7 @@ class PicturesController < ApplicationController
     @picture = Picture.new(picture_params)
    
     @picture.save
-    redirect_to @picture
+    redirect_to pictures_path
   end
 
   private

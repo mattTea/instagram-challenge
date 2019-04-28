@@ -40,11 +40,26 @@ I want to be able to post pictures to insta-sham.
 
 [Useful SO post](https://stackoverflow.com/questions/14174044/uploading-a-file-in-rails)
 
-1. Install and use `ActiveStorage` (after some unsuccessful attempts not using a gem for this)
-2. Part 2 - add an index to view all posts
+- Install and use `ActiveStorage` (after some unsuccessful attempts not using a gem for this)
 
 ```
-User story 2: Write comments
+User story 2: View all posts
+----------------------------
+As a user,
+so that I can snoop on other users,
+I want to be able to see all posted pictures.
+```
+
+#### Some refactoring of db tables
+
+- `rails generate migration RemoveFilenameFromPictures filename:string`
+- `rails generate migration RemoveContent_TypeFromPictures content_type:string`
+- `rails generate migration RemoveDataFromPictures data:binary`
+- `rails db:migrate`
+
+
+```
+User story 3: Write comments
 ----------------------------
 As a user,
 so that I can let others know my opinion on their pictures,
@@ -52,7 +67,7 @@ I want to be able to write comments on posts.
 ```
 
 ```
-User story 3: Like a picture
+User story 4: Like a picture
 ----------------------------
 As a user,
 so that I can let others know I appreciate a picture,
@@ -60,7 +75,7 @@ I want to be able to 'like' posts.
 ```
 
 ```
-User story 4: Sign up
+User story 5: Sign up
 ---------------------
 As a users,
 so that other users know who has posted a picture or made a comment,
