@@ -12,8 +12,13 @@ class PicturesController < ApplicationController
 
   def create
     @picture = Picture.new(picture_params)
-   
     @picture.save
+    redirect_to pictures_path
+  end
+
+  def destroy
+    @picture = Picture.find(params[:id])
+    @picture.destroy
     redirect_to pictures_path
   end
 

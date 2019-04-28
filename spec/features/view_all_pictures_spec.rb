@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.feature "View all posts", type: :feature do
-  scenario "user can see all posts" do
+RSpec.feature "View all pictures", type: :feature do
+  scenario "user can see all pictures" do
     # create test post
     visit "/pictures/new"
     fill_in "Title", with: "First sham pic"

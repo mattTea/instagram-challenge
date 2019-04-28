@@ -8,6 +8,12 @@
   <%= image_tag @picture.image %>
 </p>
 
+<p>
+  <%= button_to 'Delete pic', picture_path(@picture),
+                method: :delete,
+                data: { confirm: 'Are you sure?' } %>
+</p>
+
 <%= link_to pictures_path do %>
   Back to timeline
 <% end %>

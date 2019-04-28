@@ -58,10 +58,6 @@ I want to be able to see all posted pictures.
 - `rails db:migrate`
 
 
-#### ADDITIONAL
-
-- Add link to `view` individual posts from timeline
-
 ```
 User story 3: View individual post
 ----------------------------------
@@ -70,8 +66,21 @@ so I can see a picture in all its glory, without clutter,
 I want to be able to click through to view a post on its own separate page.
 ```
 
+1. Link from timeline list page
+2. Navigation back to list page
 
-- Add `delete` option for posts from individual view
+
+```
+User story 4: Delete post
+-------------------------
+As a user,
+so that I can ensure only my best pictures are posted,
+I want to be able to delete posts I no longer want.
+```
+
+1. Add delete/destroy route
+2. Add button to delete in individual picture page
+3. Redirect to timeline
 
 
 ```
