@@ -84,7 +84,7 @@ I want to be able to delete posts I no longer want.
 
 
 ```
-User story X: Write comments
+User story 5: Write comments
 ----------------------------
 As a user,
 so that I can let others know my opinion on their pictures,
@@ -93,6 +93,18 @@ I want to be able to write comments on posts.
 
 1. Comments will `belong_to` a picture
 2. A Picture may have many comments
+
+- Run `rails generate model Comment author:string body:text picture:references`
+- Run `rails db:migrate`
+
+
+ADDITIONAL refactoring
+
+- Refactors pics to prevent adding without title
+- Adds test for this
+- Refactors `show` to allow display without pic
+- Refactors `index` to link entire pic entry (to `show` page)
+- Adds flash messages for created and deleted pics
 
 
 ```

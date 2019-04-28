@@ -8,17 +8,23 @@ class PicturesController < ApplicationController
   end
   
   def new
+    @picture = Picture.new
   end
 
   def create
     @picture = Picture.new(picture_params)
-    @picture.save
-    redirect_to pictures_path
+    if @picture.save
+      flash[:notice] = "Sham pic successfully added!"
+      redirect_to pictures_path
+    else
+      render 'new'
+    end
   end
 
   def destroy
     @picture = Picture.find(params[:id])
     @picture.destroy
+    flash[:notice] = "Pic deleted."
     redirect_to pictures_path
   end
 

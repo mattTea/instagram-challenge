@@ -1,3 +1,7 @@
+<% if flash[:notice] %>
+  <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+
 <h1>Sham timeline</h1>
 
 <%= link_to new_picture_path do %>
@@ -7,8 +11,8 @@
 <ul>
   <% @pictures.each do |picture| %>
     <li>
-      <%= picture.title %>
       <%= link_to picture_path(picture.id) do %>
+        <%= picture.title %>
         <%= image_tag picture.image if picture.image.attached? %>
       <% end %>
     </li>
