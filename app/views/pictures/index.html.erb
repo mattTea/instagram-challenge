@@ -1,0 +1,10 @@
+<h1>Post timeline</h1>
+
+<ul>
+  <% @pictures.each do |picture| %>
+    <li>
+      <%= picture.title %>
+      <%= image_tag picture.image if picture.image.attached? %>
+    </li>
+  <% end %>
+</ul>

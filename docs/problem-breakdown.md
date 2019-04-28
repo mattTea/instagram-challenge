@@ -40,13 +40,8 @@ I want to be able to post pictures to insta-sham.
 
 [Useful SO post](https://stackoverflow.com/questions/14174044/uploading-a-file-in-rails)
 
-Note: Picture params...
-```ruby
-<ActionController::Parameters {"title"=>"New post", "picture"=>#<ActionDispatch::Http::UploadedFile:0x00007fb2616bee08 @tempfile=#<Tempfile:/var/folders/kf/r1chjr690q9bzg7s91bzmy940000gp/T/RackMultipart20190428-16503-dligkb.png>, @original_filename="picture.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"picture[picture]\"; filename=\"picture.png\"\r\nContent-Type: image/png\r\n">} permitted: false>
-```
-
-To generate `Picture` model...
-- `rails generate model Picture title:string image:binary`
+1. Install and use `ActiveStorage` (after some unsuccessful attempts not using a gem for this)
+2. Part 2 - add an index to view all posts
 
 ```
 User story 2: Write comments
