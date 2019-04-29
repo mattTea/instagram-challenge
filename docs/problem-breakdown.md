@@ -97,12 +97,6 @@ I want to be able to write comments on posts.
 - Run `rails generate model Comment author:string body:text picture:references`
 - Run `rails db:migrate`
 
-------
-
-_Delivered to this point 28th April 2019_
-
-------
-
 
 ```
 User story 6: See number of comments on timeline
@@ -111,6 +105,12 @@ As a user,
 so that I measure the popularity of my pictures,
 I want to be able to see the number of comments added in the timeline view.
 ```
+
+------
+
+_Delivered to this point 29th April 2019_
+
+------
 
 ```
 User story 7: Like a picture

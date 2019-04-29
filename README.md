@@ -36,7 +36,9 @@ Upcoming features will include
 
 3. Run `bundle install`
 
-4. Run `rails db:migrate`
+4. Run `rails db:create`
+
+5. Run `rails db:migrate`
 
 ------
 
