@@ -1,3 +1,47 @@
 // Place all the styles related to the Pictures controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  background-color: ghostwhite;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.pic {
+  padding: 1rem;
+  text-align: center;
+}
+
+.pic-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.pic-comments {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.comment-like-container {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.like-button {
+  background-color: ghostwhite;
+  border: none;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}

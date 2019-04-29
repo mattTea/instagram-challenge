@@ -2,24 +2,32 @@
   <div class="notice"><%= flash[:notice] %></div>
 <% end %>
 
-<h1>Sham timeline</h1>
-
-<%= link_to new_picture_path do %>
-  Upload new sham!
-<% end %>
+<div class="nav">
+  <h1>Sham timeline</h1>
+  <div>
+    <%= button_to new_picture_path, :class => "new-sham-button", :method => :get do %>
+      Upload new sham!
+    <% end %>
+  </div>
+</div>
 
 <ul>
   <% @pictures.each do |picture| %>
-    <li>
+    <div class="container">
       <%= link_to picture_path(picture.id) do %>
-        <%= picture.title %>
-        <%= image_tag picture.image if picture.image.attached? %>
-        <% if picture.comments.length == 1 %>
-          <%= picture.comments.length%> comment
-        <% else %>
-          <%= picture.comments.length%> comments
-        <% end %>  
+        <div class="pic"><%= image_tag picture.image.variant(resize: "150x150") if picture.image.attached? %></div>
+        <div class="pic-title"><%= picture.title %></div>
+        <div class="comment-like-container">
+          <div class="pic-comments"><% if picture.comments.length == 1 %>
+            <%= picture.comments.length%> comment
+          <% else %>
+            <%= picture.comments.length%> comments
+          <% end %></div>
+          <div>
+            <button class="like-button">👍</button>0
+          </div>
+        </div>
       <% end %>
-    </li>
+    </div>
   <% end %>
 </ul>
