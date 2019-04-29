@@ -14,6 +14,11 @@
       <%= link_to picture_path(picture.id) do %>
         <%= picture.title %>
         <%= image_tag picture.image if picture.image.attached? %>
+        <% if picture.comments.length == 1 %>
+          <%= picture.comments.length%> comment
+        <% else %>
+          <%= picture.comments.length%> comments
+        <% end %>  
       <% end %>
     </li>
   <% end %>
